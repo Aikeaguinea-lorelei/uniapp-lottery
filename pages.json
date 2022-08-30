@@ -1,0 +1,81 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        // 不同路径对应的样式设定
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "抽奖"
+			}
+		}
+	    ,{
+            "path" : "pages/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设置",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ,{
+    "path": "pages/lottery/add",
+    "style": {
+        "navigationBarTitleText": "新增"
+    }
+}
+,{
+    "path": "pages/lottery/edit",
+    "style": {
+        "navigationBarTitleText": "编辑"
+    }
+}
+,{
+    "path": "pages/lottery/list",
+    "style": {
+        "navigationBarTitleText": "列表"
+    }
+}
+,{
+    "path": "pages/lottery/detail",
+    "style": {
+        "navigationBarTitleText": "详情"
+    }
+}
+],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#1afa29",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		// list里面有几个包,代表导航栏里面有几项
+		"list": [
+			// iconPath对应的图片代表未选中状态的图片,selectedPath的图片是选中状态的
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/index.png",
+				"selectedIconPath": "static/index-select.png",
+				"text":"抽奖"
+			},{
+				"pagePath": "pages/lottery/list",
+				"iconPath": "static/setting.png",
+				"selectedIconPath": "static/setting-select.png",
+				"text": "设置"
+			}
+		]
+	},
+	// 全局样式
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

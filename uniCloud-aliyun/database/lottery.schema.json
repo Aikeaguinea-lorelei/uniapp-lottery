@@ -1,0 +1,31 @@
+{
+	"bsonType": "object",
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	// input里面的内容必填
+	"required": [
+		"title",
+		"picture"
+	],
+	"properties": {
+		"_id": {
+			"description": "存储文档 ID（用户 ID），系统自动生成"
+		},
+		"title": {
+			"bsonType": "string",
+			"title": "名称", // title: 表单前面的标签
+			"description": "输入奖品名称" // description: placeholder
+		},
+		"picture":{
+			"bsonType": "file",
+			"title":"图片",
+			"fileMediaType": "image",  // 表示什么类型的文件可以上传
+			"fileExtName": "jpg,png"
+		}
+	},
+	"version": "0.0.1"
+}
